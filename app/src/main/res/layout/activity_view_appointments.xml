@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#212121"
+    android:backgroundTint="#212121"
+    tools:context=".BookingScheduling_Activity">
+
+    <LinearLayout
+        android:id="@+id/llViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:background="#34404B"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="24dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/fbutton_color_belize_hole"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/btnAppointmentsBackToHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="#212121"
+                    android:foregroundGravity="center_vertical|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Back to home"
+                    android:textAlignment="center"
+                    android:textColor="#E0F2F1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btnSelectDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:background="#212121"
+                    android:foregroundGravity="center_vertical|center"
+                    android:gravity="center|center_horizontal|center_vertical"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Select A Date To View Appointments"
+                    android:textAlignment="center"
+                    android:textColor="#E0F2F1"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAppointmentTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-1dp"
+                android:background="#242424"
+                android:fontFamily="@font/capriola"
+                android:padding="10dp"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
+                android:text="Appointments For Today"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#F1F8E9"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/llViewAppointments"
+        android:background="#212121"
+        android:backgroundTint="#212121"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#242424"
+    android:elevation="24dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/txtAdminTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:padding="15dp"
+        android:text="please enter your login credentials"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#F4C8C8"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        tools:ignore="HardcodedText" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtAdminUN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:ems="10"
+            android:fontFamily="@font/oldenburg"
+            android:hint="enter username"
+            android:inputType="textPersonName"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#EACBCB"
+            android:textColorHint="#F4DEF8"
+            android:textSize="18sp"
+            tools:ignore="Autofill,HardcodedText" />
+
+        <EditText
+            android:id="@+id/txtAdminPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="15dp"
+            android:ems="10"
+            android:fontFamily="@font/oldenburg"
+            android:hint="enter password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#EACBCB"
+            android:textColorHint="#F4DEF8"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            android:fontFamily="@font/capriola"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Button"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:elevation="20dp"
+            android:fontFamily="@font/capriola"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Button"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

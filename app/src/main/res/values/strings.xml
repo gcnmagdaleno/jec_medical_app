@@ -1,0 +1,41 @@
+<resources>
+    <string name="facebook_app_id">717452322355951</string>
+    <string name="app_name">JEC Medical and Diagnostic Center</string>
+    <string name="strName">Juvy Cuyugan-Cruz, M.D., DPAFP Medical and Diagnostics Center and Bulacan Animal Bite Center</string>
+    <string name="strAdmin">Click here if you are an admin</string>
+    <string name="strNavService">Services Offered</string>
+    <string name="strNavDeliver">Delivery</string>
+    <string name="strNavBranches">Our Branches</string>
+    <string name="strNavAbout">About Us</string>
+    <string name="strNavBook">Book/Schedule With Us</string>
+    <string name="strBookTitle">Schedule or Book an appointment\n(Magpa-Iskedyul ng apoyntment)</string>
+    <string name="strBookLastName">Enter your last name\n(Apelyido)</string>
+    <string name="strBookFirstName">Enter your first name\n(Unang Pangalan)</string>
+    <string name="strBookMiddleName">Enter your middle name\n(Gitnang Pangalan) - [Optional/Opsiyunal]</string>
+    <string name="strService1">GENERAL CONSULTATION</string>
+    <string name="strService11">Our commitment to your Family’s care</string>
+    <string name="strService2">PEDIATRIC AND MATERNAL CARE</string>
+    <string name="strService22">A healthy child, needs a healthy mother</string>
+    <string name="strService3">ANIMAL BITE</string>
+    <string name="strService33">Service for Anti-Rabies treatment at a very affordable cost</string>
+    <string name="strService4">MINOR SURGERY AND LABORATORY</string>
+    <string name="strService44">Determine the extent, diagnosis and treatment of diseases</string>
+    <string name="strService">Services</string>
+    <string name="title_activity_services_tabbed">services_tabbed</string>
+    <string name="strServicesTab1">Our Services</string>
+    <string name="strServicesTab2">Medical Services</string>
+    <string name="strAdmin1UN">joy</string>
+    <string name="strAdmin1PW">medicol</string>
+    <string name="strAdmin2UN">gian</string>
+    <string name="strAdmin2PW">giancarlo</string>
+    <string name="strAdminShared">shared</string>
+
+    <string name="title_activity_str_admin_page__main">strAdminPage_Main</string>
+
+    <string name="title_activity_view_appointments">ViewAppointments</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+</resources>

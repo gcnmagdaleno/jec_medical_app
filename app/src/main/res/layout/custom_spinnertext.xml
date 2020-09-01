@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:background="#3E3636"
+    android:drawablePadding="10dp"
+    android:ellipsize="marquee"
+    android:fontFamily="@font/ubuntu_bold"
+    android:includeFontPadding="true"
+    android:singleLine="false"
+    android:text="[NEAREST BRANCH] Branch 2: Prenza Branch - Techome Building Corner Bayan Bayanan Street, Prenza 1, Marilao Bulacan "
+    android:textAlignment="textStart"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"
+    android:textStyle="bold" />
