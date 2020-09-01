@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Services_Tabbed">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#3A9F3B"
+            android:elevation="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#3A9F3B"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/strService"
+                android:textColor="#FFFFFF"
+                android:textSize="45sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A9E1AA"
+            android:hapticFeedbackEnabled="true"
+            app:tabGravity="fill"
+            app:tabIconTint="@color/design_default_color_secondary_variant"
+            app:tabIndicator="@drawable/com_facebook_button_login_background"
+            app:tabIndicatorGravity="center"
+            app:tabMode="scrollable"
+            app:tabRippleColor="#DFB2B2"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:tabTextColor="@color/black_overlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTintMode="src_in"
+        app:backgroundTint="#B2DFDB"
+        app:backgroundTintMode="src_atop"
+        app:borderWidth="1dp"
+        app:elevation="10dp"
+        app:hoveredFocusedTranslationZ="3dp"
+        app:maxImageSize="30dp"
+        app:pressedTranslationZ="7dp"
+        app:rippleColor="#E17D7D"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        app:useCompatPadding="true" />
+
+    <include
+        android:id="@+id/include_showFab"
+        layout="@layout/activity_services_tabone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="20dp"
+        android:visibility="invisible" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

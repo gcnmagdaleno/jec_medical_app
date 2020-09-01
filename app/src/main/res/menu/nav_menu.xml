@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_book"
+        android:title="@string/strNavBook" />
+    <item android:id="@+id/nav_service" android:title="@string/strNavService"/>
+    <item android:id="@+id/nav_delivery" android:title="@string/strNavDeliver"/>
+    <item android:id="@+id/nav_branches" android:title="@string/strNavBranches"/>
+    <item android:id="@+id/nav_about" android:title="@string/strNavAbout"/>
+</menu>

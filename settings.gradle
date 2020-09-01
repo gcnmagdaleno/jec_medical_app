@@ -1,0 +1,2 @@
+rootProject.name='JEC Medical and Diagnostic Center'
+include ':app'

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gcnm.jecmedicalanddiagnosticcenter">
+
+    <application
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:multiArch="true"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity android:name=".Services_ChooseAService"></activity>
+        <activity
+            android:name=".ViewAppointments"
+            android:label="@string/title_activity_view_appointments"></activity>
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <activity android:name=".BookingScheduling_Activity" />
+        <activity
+            android:name=".AdminPage_Main"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_str_admin_page__main"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Services_Tabbed"
+            android:label="@string/title_activity_services_tabbed"
+            android:taskAffinity=".Services_Tabbed"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".Services_TabOne"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/strService"
+            android:theme="@style/AppTheme"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+    <uses-feature android:name="android.hardware.biometrics" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>

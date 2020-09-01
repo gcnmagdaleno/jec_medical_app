@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#242424"
+    tools:context=".BookingScheduling_Activity">
+
+    <ScrollView
+        android:id="@+id/scrollViewTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="24dp"
+                android:foregroundGravity="top"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fbutton_color_belize_hole"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/btnBookBackToHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#212121"
+                        android:padding="16dp"
+                        android:text="Back to home"
+                        android:textAlignment="center"
+                        android:textColor="#FFEBEE"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/btnBookViewAppointments"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#212121"
+                        android:padding="16dp"
+                        android:text="View Appointments"
+                        android:textAlignment="center"
+                        android:textColor="#FFEBEE"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtBookError"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:background="#E57373"
+                    android:fontFamily="@font/capriola"
+                    android:padding="5dp"
+                    android:paddingEnd="40dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#242424"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic"
+                    android:visibility="visible"
+                    tools:ignore="RtlSymmetry" />
+
+                <TextView
+                    android:id="@+id/txtBookTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-1dp"
+                    android:background="#242424"
+                    android:fontFamily="@font/capriola"
+                    android:padding="10dp"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:text="@string/strBookTitle"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="#E4E0E0"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/scrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#34404B"
+                    android:fadeScrollbars="true"
+                    android:isScrollContainer="true"
+                    android:keepScreenOn="true"
+                    android:nestedScrollingEnabled="true"
+                    android:scrollIndicators="right"
+                    android:scrollbarAlwaysDrawHorizontalTrack="true"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:scrollbarSize="20dp"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbarThumbHorizontal="@drawable/ic_launcher_background"
+                    android:verticalScrollbarPosition="right"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:id="@+id/harangTop"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="50dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/harangBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="10dp"
+                            android:orientation="vertical"
+                            android:paddingBottom="20dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="35dp"
+                                android:layout_marginEnd="35dp"
+                                android:elevation="20dp"
+                                android:orientation="vertical"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                tools:ignore="UselessParent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="vertical"
+                                    android:paddingTop="30dp">
+
+                                    <TextView
+                                        android:id="@+id/textView4"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/volkhov"
+                                        android:text="Your Full Name \n (Iyong Buong Pangalan)"
+                                        android:textAllCaps="true"
+                                        android:textColor="#9FA8DA"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold"
+                                        android:visibility="gone"
+                                        tools:ignore="HardcodedText" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/txtLN"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/alef_bold"
+                                        android:hint="@string/strBookLastName"
+                                        android:textColor="#E4E0E0"
+                                        android:textColorHint="#FDF1F1"
+                                        android:textSize="12sp"
+                                        app:met_errorColor="#F17777"
+                                        app:met_floatingLabel="highlight"
+                                        app:met_floatingLabelAlwaysShown="true"
+                                        app:met_floatingLabelAnimating="true"
+                                        app:met_floatingLabelText="Last Name"
+                                        app:met_floatingLabelTextColor="#34404B"
+                                        app:met_textColor="#E0F7FA"
+                                        app:met_textColorHint="#E4E0E0"
+                                        app:met_underlineColor="#E0F7FA"
+                                        tools:ignore="HardcodedText" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/txtMN"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/alef_bold"
+                                        android:hint="@string/strBookMiddleName"
+                                        android:textColor="#E4E0E0"
+                                        android:textColorHint="#FDF1F1"
+                                        android:textSize="12sp"
+                                        app:met_errorColor="#F17777"
+                                        app:met_floatingLabel="highlight"
+                                        app:met_floatingLabelAlwaysShown="true"
+                                        app:met_floatingLabelAnimating="true"
+                                        app:met_floatingLabelText="Middle Name (OPTIONAL)"
+                                        app:met_floatingLabelTextColor="#34404B"
+                                        app:met_textColor="#E0F7FA"
+                                        app:met_textColorHint="#E4E0E0"
+                                        app:met_underlineColor="#E0F7FA"
+                                        tools:ignore="HardcodedText" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/txtFN"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/alef_bold"
+                                        android:hint="@string/strBookFirstName"
+                                        android:paddingBottom="20dp"
+                                        android:textColor="#E4E0E0"
+                                        android:textColorHint="#FDF1F1"
+                                        android:textSize="12sp"
+                                        app:met_errorColor="#F17777"
+                                        app:met_floatingLabel="highlight"
+                                        app:met_floatingLabelAlwaysShown="true"
+                                        app:met_floatingLabelAnimating="true"
+                                        app:met_floatingLabelText="First Name"
+                                        app:met_floatingLabelTextColor="#34404B"
+                                        app:met_textColor="#E0F7FA"
+                                        app:met_textColorHint="#E4E0E0"
+                                        app:met_underlineColor="#E0F7FA"
+                                        tools:ignore="HardcodedText" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/txtCNumber"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/alef_bold"
+                                        android:hint="Contact Number"
+                                        android:inputType="number"
+                                        android:phoneNumber="false"
+                                        android:shadowColor="#F1F8E9"
+                                        android:textColor="#E4E0E0"
+                                        android:textColorHint="#FDF1F1"
+                                        android:textSize="12sp"
+                                        app:met_baseColor="#FFF8E1"
+                                        app:met_errorColor="#F17777"
+                                        app:met_floatingLabel="highlight"
+                                        app:met_floatingLabelAlwaysShown="true"
+                                        app:met_floatingLabelAnimating="true"
+                                        app:met_floatingLabelText="Contact Number"
+                                        app:met_floatingLabelTextColor="#34404B"
+                                        app:met_helperTextColor="#E0F7FA"
+                                        app:met_primaryColor="#F3CECE"
+                                        app:met_textColor="#E0F7FA"
+                                        app:met_textColorHint="#E4E0E0"
+                                        app:met_underlineColor="#E0F7FA"
+                                        tools:ignore="Deprecated,HardcodedText" />
+
+                                    <com.rengwuxian.materialedittext.MaterialEditText
+                                        android:id="@+id/txtAddress"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/alef_bold"
+                                        android:hint="Address"
+                                        android:inputType="textLongMessage"
+                                        android:shadowColor="#F1F8E9"
+                                        android:textColor="#E4E0E0"
+                                        android:textColorHint="#FDF1F1"
+                                        android:textSize="12sp"
+                                        app:met_baseColor="#FFF8E1"
+                                        app:met_errorColor="#F17777"
+                                        app:met_floatingLabel="highlight"
+                                        app:met_floatingLabelAlwaysShown="true"
+                                        app:met_floatingLabelAnimating="true"
+                                        app:met_floatingLabelText="Address"
+                                        app:met_floatingLabelTextColor="#34404B"
+                                        app:met_helperTextColor="#E0F7FA"
+                                        app:met_primaryColor="#F3CECE"
+                                        app:met_textColor="#E0F7FA"
+                                        app:met_textColorHint="#E4E0E0"
+                                        app:met_underlineColor="#E0F7FA"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textView3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="20dp"
+                                        android:layout_marginEnd="20dp"
+                                        android:layout_weight="1"
+                                        android:fontFamily="@font/volkhov"
+                                        android:paddingStart="-10dp"
+                                        android:paddingTop="30dp"
+                                        android:text=" GENDER (Kasarian)"
+                                        android:textAlignment="center"
+                                        android:textAllCaps="true"
+                                        android:textColor="#9FA8DA"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText,InefficientWeight,NestedWeights,RtlSymmetry" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="horizontal">
+
+                                        <RadioGroup
+                                            android:id="@+id/rgGender"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center|center_horizontal"
+                                            android:checkedButton="@id/rbMale"
+                                            android:foregroundGravity="center_vertical|center|center_horizontal"
+                                            android:gravity="center|center_horizontal"
+                                            android:orientation="horizontal"
+                                            android:paddingStart="40dp"
+                                            android:paddingBottom="10dp"
+                                            tools:ignore="RtlSymmetry,TooDeepLayout">
+
+                                            <RadioButton
+                                                android:id="@+id/rbMale"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/ubuntu_bold"
+                                                android:paddingEnd="10dp"
+                                                android:text="Male\n(Lalaki)"
+                                                android:textAlignment="center"
+                                                android:textAllCaps="true"
+                                                android:textColor="#E0F7FA"
+                                                android:textSize="12sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="HardcodedText,TooDeepLayout" />
+
+                                            <RadioButton
+                                                android:id="@+id/rbFemale"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="@font/ubuntu_bold"
+                                                android:paddingEnd="50dp"
+                                                android:text="Female\n(Babae)"
+                                                android:textAlignment="center"
+                                                android:textAllCaps="true"
+                                                android:textColor="#E0F7FA"
+                                                android:textSize="12sp"
+                                                android:textStyle="bold"
+                                                tools:ignore="HardcodedText" />
+
+                                        </RadioGroup>
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/btnAppointmentDate"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:layout_margin="20dp"
+                                    android:layout_weight="1"
+                                    android:background="#34404B"
+                                    android:backgroundTint="#34404B"
+                                    android:backgroundTintMode="src_over"
+                                    android:breakStrategy="high_quality"
+                                    android:clickable="true"
+                                    android:drawableTintMode="src_in"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/alef_bold"
+                                    android:foregroundGravity="center|center_horizontal"
+                                    android:foregroundTintMode="src_in"
+                                    android:gravity="center|center_horizontal"
+                                    android:longClickable="false"
+                                    android:text="Click here to choose a date for the appointment (Pumili ng araw ng appointment)"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="#FBF1F1"
+                                    android:textSize="14sp"
+                                    android:visibility="visible"
+                                    app:cornerRadius="20dp"
+                                    app:iconTintMode="src_in"
+                                    app:rippleColor="#E19999"
+                                    tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+
+                                <TextView
+                                    android:id="@+id/btnAppointmentTime"
+                                    style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:layout_margin="20dp"
+                                    android:layout_weight="1"
+                                    android:background="#34404B"
+                                    android:backgroundTint="#34404B"
+                                    android:backgroundTintMode="src_over"
+                                    android:breakStrategy="high_quality"
+                                    android:clickable="true"
+                                    android:drawableTintMode="src_in"
+                                    android:focusable="false"
+                                    android:fontFamily="@font/alef_bold"
+                                    android:foregroundGravity="center|center_horizontal"
+                                    android:foregroundTintMode="src_in"
+                                    android:gravity="center|center_horizontal"
+                                    android:longClickable="false"
+                                    android:text="Click here to choose a time for the appointment (Pumili ng oras ng appointment)"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                                    android:textColor="#FBF1F1"
+                                    android:textSize="14sp"
+                                    android:visibility="visible"
+                                    app:cornerRadius="20dp"
+                                    app:iconTintMode="src_in"
+                                    app:rippleColor="#E19999"
+                                    tools:ignore="HardcodedText,KeyboardInaccessibleWidget" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:visibility="invisible">
+
+                                <Spinner
+                                    android:id="@+id/spinnerServices"
+                                    style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="10dp"
+                                    android:backgroundTint="#F48FB1"
+                                    android:elevation="4dp"
+                                    android:foregroundGravity="center_vertical"
+                                    android:foregroundTint="#FFFFFF"
+                                    android:hapticFeedbackEnabled="true"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="10dp"
+                                    android:paddingBottom="50dp"
+                                    android:spinnerMode="dialog"
+                                    android:splitMotionEvents="false"
+                                    android:textAlignment="gravity" />
+
+                                <TextView
+                                    android:id="@+id/txtServicesbooking"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:fontFamily="@font/volkhov"
+                                    android:paddingTop="30dp"
+                                    android:text="Choose a Service from below\n(Pumili ng serbisyo sa ibaba)"
+                                    android:textAlignment="center"
+                                    android:textAllCaps="true"
+                                    android:textColor="#9FA8DA"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText,InefficientWeight" />
+
+                            </LinearLayout>
+
+                            <Spinner
+                                android:id="@+id/spinnerBranches"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:spinnerMode="dropdown"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/btnBranch"
+                                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="20dp"
+                                android:layout_weight="1"
+                                android:background="@color/black_overlay"
+                                android:backgroundTint="#000000"
+                                android:backgroundTintMode="src_in"
+                                android:clickable="true"
+                                android:drawableTint="#000000"
+                                android:drawableTintMode="src_in"
+                                android:elevation="2dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/alef_bold"
+                                android:foreground="@android:drawable/divider_horizontal_dark"
+                                android:foregroundTint="#000000"
+                                android:foregroundTintMode="src_in"
+                                android:longClickable="false"
+                                android:text="LOCATION"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                                android:textColor="#FBF1F1"
+                                android:visibility="gone"
+                                fbutton:cornerRadius="10dp"
+                                fbutton:iconTint="#121212"
+                                fbutton:iconTintMode="src_in"
+                                fbutton:rippleColor="#E19999"
+                                tools:ignore="HardcodedText,InefficientWeight,KeyboardInaccessibleWidget" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/harangBottom"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="50dp"
+                            android:visibility="visible">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <TextView
+        android:id="@+id/btnSubmitBooking"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/scrollViewTop"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/fbutton_color_green_sea"
+        android:backgroundTint="@color/fbutton_color_green_sea"
+        android:backgroundTintMode="screen"
+        android:elevation="24dp"
+        android:padding="10dp"
+        android:text="submit"
+        android:textAlignment="center"
+
+        android:textAllCaps="true"
+        android:textColor="@color/colorWhite"
+        android:textColorHighlight="@color/colorWhite"
+        android:textColorHint="@color/colorWhite"
+        android:textColorLink="@color/colorWhite"
+        android:textCursorDrawable="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:backgroundTint="#00796B"
+        app:cornerRadius="5dp"
+        app:elevation="24dp"
+        tools:ignore="HardcodedText"
+        tools:text="submit" />
+
+
+</RelativeLayout>

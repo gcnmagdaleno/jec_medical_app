@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:nestedScrollingEnabled="true"
+    android:overScrollMode="always"
+    android:persistentDrawingCache="scrolling"
+    android:scrollIndicators="right"
+    android:scrollbarDefaultDelayBeforeFade="350"
+    android:scrollbarFadeDuration="500"
+    android:scrollbarSize="18dp"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".Services_TabOne">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <WebView
+            android:id="@+id/webView_services"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+</RelativeLayout>
